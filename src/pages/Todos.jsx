@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import Container from "@/componentss/Container";
+import TodoModal from "@/componentss/todo/TodoModal";
 import {  SearchIcon } from "lucide-react";
 import {  useState } from "react";
 
@@ -43,7 +44,7 @@ const Todos = () => {
                     <Input placeholder='Search'/>
                 </div>
                 <div>
-                    <Button>Add Todo</Button>
+                    <TodoModal/>
                 </div>
             </div>
             <div className="border-b border-gray-300 my-5" />
